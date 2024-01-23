@@ -22,13 +22,15 @@ export class UsersQueryRepository {
         let filter = []
 
         if (searchEmailTerm){
-            filter.push({name: {
+            filter.push({
+                email: {
                     $regex: searchEmailTerm,
                     $options: "i"}})
         }
 
         if (searchLoginTerm){
-            filter.push({name: {
+            filter.push({
+                login: {
                     $regex: searchLoginTerm,
                     $options: "i"}})
         }
