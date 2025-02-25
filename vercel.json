@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "name": "blog-hw5",
+  "name": "blog-hw6",
   "builds": [
     { "src": "/src/index.ts", "use": "@vercel/node" }
   ],
